@@ -5,6 +5,7 @@
 [image11]: ./misc_images/image11.jpg
 [image12]: ./misc_images/image12.jpg
 [image13]: ./misc_images/image13.jpg
+[image14]: ./misc_images/image14.jpg
 
 ### Kinematic Analysis
 #### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
@@ -88,13 +89,7 @@ Joint 7 (Gripper Joint)
 * d7 = link(gripper x)-link5(x)= 2.1529–1.8499 = 0.303
 
 Modified DH parameters
-*DH = {   alpha0: 0,      a0: 0,      d1: 0.75,    q1: q1,
-         alpha1: -pi/2,  a1: 0.35,   d2: 0,       q2: q2-pi/2,
-         alpha2: 0,      a2: 1.25,   d3: 0,       q3: q3,
-         alpha3: -pi/2,  a3: 0.0536, d4: 1.5014,  q4: q4,
-         alpha4: pi/2,   a4: 0,      d5: 0,       q5: q5,
-         alpha5: -pi/2,  a5: 0,      d6: 0,       q6: q6,
-         alpha6: 0,      a6: 0,      d7: 0.303,   q7: 0}
+![alt text][image14]
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 

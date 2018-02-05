@@ -50,7 +50,6 @@ A6 is the distance from Z6 to ZG measured along X6. a6=0.
 The link offset d7 is the sign distance from X6 to XG, measured along ZG. d7=dG.
 Joint 7 measures the angle between X6 and XG about the ZG.  θ7=0.
 
-#### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 ![alt text][image13]
 α = arm twist angle
 
@@ -87,6 +86,17 @@ Joint 6
 Joint 7 (Gripper Joint)
 * a6 = 0 (Z6 is coincident with Z7)
 * d7 = link(gripper x)-link5(x)= 2.1529–1.8499 = 0.303
+
+Modified DH parameters
+DH = {   alpha0: 0,      a0: 0,      d1: 0.75,    q1: q1,
+         alpha1: -pi/2,  a1: 0.35,   d2: 0,       q2: q2-pi/2,
+         alpha2: 0,      a2: 1.25,   d3: 0,       q3: q3,
+         alpha3: -pi/2,  a3: 0.0536, d4: 1.5014,  q4: q4,
+         alpha4: pi/2,   a4: 0,      d5: 0,       q5: q5,
+         alpha5: -pi/2,  a5: 0,      d6: 0,       q6: q6,
+         alpha6: 0,      a6: 0,      d7: 0.303,   q7: 0}
+
+#### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
 

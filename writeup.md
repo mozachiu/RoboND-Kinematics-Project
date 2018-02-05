@@ -2,14 +2,14 @@
 
 [//]: # (Image References)
 
-[image1]: ./misc_images/misc1.png
+[image11]: ./misc_images/image11.jpg
 
 ### Kinematic Analysis
 #### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
 
-Here is an example of how to include an image in your writeup.
+![alt text][image11]
 
-![alt text][image1]
+
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 

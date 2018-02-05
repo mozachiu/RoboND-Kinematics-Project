@@ -7,6 +7,7 @@
 [image13]: ./misc_images/image13.jpg
 [image14]: ./misc_images/image14.jpg
 [image15]: ./misc_images/image15.jpg
+[image16]: ./misc_images/image16.jpg
 
 ### Kinematic Analysis
 #### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
@@ -99,7 +100,6 @@ The homogeneous transform from frame i-1 to frame i is constructed as a sequence
 
 ![alt text][image15]
 
-
 From the DH paramater table the individual trsnaformation matrices is :
 * 1.Matrix([[cos(q1), -sin(q1), 0, 0], [sin(q1), cos(q1), 0, 0], [0, 0, 1, 0.750000000000000], [0, 0, 0, 1]])
 * 2.Matrix([[cos(q2 - 0.5*pi), -sin(q2 - 0.5*pi), 0, 0.350000000000000], [0, 0, 1, 0], [-sin(q2 - 0.5*pi), -cos(q2 - 0.5*pi), 0, 0], [0, 0, 0, 1]])
@@ -112,9 +112,16 @@ From the DH paramater table the individual trsnaformation matrices is :
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
 
-And here's where you can draw out and show your math for the derivation of your theta angles. 
+Find wrist center first:
+Use the quation below  calculates the wrist center :
+![alt text][image16]
 
-![alt text][image2]
+From the DH parameter table,  the griper link offset d = 0.303. 
+Imply that WC = EE position - (0.303) * Rrpy[:,2],
+which 
+Rrpy =EE rotation matrix * R_corr 
+and 
+R_corr = a correctional rotation composed by a rotation on the Z axis of 180° (π) followed by a rotation on the Y axis of -90 (-π/2).
 
 ### Project Implementation
 

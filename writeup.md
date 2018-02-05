@@ -3,10 +3,12 @@
 [//]: # (Image References)
 
 [image11]: ./misc_images/image11.jpg
+[image12]: ./misc_images/image12.jpg
 
 ### Kinematic Analysis
 #### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
 
+![alt text][image12]
 ![alt text][image11]
 
 The description about how obtained the table :

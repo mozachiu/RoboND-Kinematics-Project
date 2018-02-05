@@ -63,12 +63,15 @@ d = arm link offset
 Joint 1
 * a0 = 0, since this is the base link.
 * d1 = link2(z) = 0.75
+
 Joint 2
 * a1 = link2(x) = 0.35
 * d2 =0, since X1 and X2 are perpendicular.
+
 Joint 3
-    a2 = link3(z) = 1.25
-    d3 =0, since X2 and X3 are coincident.
+* a2 = link3(z) = 1.25
+* d3 =0, since X2 and X3 are coincident.
+
 Joint 4
     a3 = link3(z) - link5(z) = 2–1.9464 = 0.0536
     d4 = link5(x)- link3(x) = 1.8499–0.3485= 1.5014

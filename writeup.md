@@ -126,6 +126,10 @@ Rrpy =EE rotation matrix * R_corr
 and 
 R_corr = a correctional rotation composed by a rotation on the Z axis of 180° (π) followed by a rotation on the Y axis of -90 (-π/2).
 
+After we get WC, we can calculates the angles from θ1 to θ6.
+θ1 = atan2(y of wc, x of wc)
+
+
 ### Project Implementation
 
 #### 1. Fill in the `IK_server.py` file with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis. Your code must guide the robot to successfully complete 8/10 pick and place cycles. Briefly discuss the code you implemented and your results. 

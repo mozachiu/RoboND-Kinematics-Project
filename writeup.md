@@ -6,6 +6,7 @@
 [image12]: ./misc_images/image12.jpg
 [image13]: ./misc_images/image13.jpg
 [image14]: ./misc_images/image14.jpg
+[image15]: ./misc_images/image15.jpg
 
 ### Kinematic Analysis
 #### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
@@ -94,7 +95,12 @@ Modified DH parameters
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 
-From the DH paramater tablem the individual trsnaformation matrices is :
+The homogeneous transform from frame i-1 to frame i is constructed as a sequence of four basic transformations, two rotations and two translations as follows: 
+
+![alt text][image15]
+
+
+From the DH paramater table the individual trsnaformation matrices is :
 * 1.Matrix([[cos(q1), -sin(q1), 0, 0], [sin(q1), cos(q1), 0, 0], [0, 0, 1, 0.750000000000000], [0, 0, 0, 1]])
 * 2.Matrix([[cos(q2 - 0.5*pi), -sin(q2 - 0.5*pi), 0, 0.350000000000000], [0, 0, 1, 0], [-sin(q2 - 0.5*pi), -cos(q2 - 0.5*pi), 0, 0], [0, 0, 0, 1]])
 * 3.Matrix([[cos(q3), -sin(q3), 0, 1.25000000000000], [sin(q3), cos(q3), 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])

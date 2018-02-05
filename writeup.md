@@ -117,9 +117,12 @@ Use the quation below  calculates the wrist center :
 ![alt text][image16]
 
 From the DH parameter table,  the griper link offset d = 0.303. 
+
 Imply that WC = EE position - (0.303) * Rrpy[:,2],
+
 which 
 Rrpy =EE rotation matrix * R_corr 
+
 and 
 R_corr = a correctional rotation composed by a rotation on the Z axis of 180° (π) followed by a rotation on the Y axis of -90 (-π/2).
 

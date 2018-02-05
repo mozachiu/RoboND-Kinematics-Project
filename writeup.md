@@ -89,6 +89,7 @@ Joint 7 (Gripper Joint)
 * d7 = link(gripper x)-link5(x)= 2.1529–1.8499 = 0.303
 
 Modified DH parameters
+
 ![alt text][image14]
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.

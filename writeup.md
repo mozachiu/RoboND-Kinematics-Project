@@ -52,7 +52,6 @@ Joint 7 measures the angle between X6 and XG about the ZG.  θ7=0.
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 ![alt text][image13]
-
 α = arm twist angle
 
 a = arm link length
@@ -62,11 +61,11 @@ d = arm link offset
 θ = arm joint angle
 
 Joint 1
-    a0 = 0, since this is the base link.
-    d1 = link2(z) = 0.75
+* a0 = 0, since this is the base link.
+* d1 = link2(z) = 0.75
 Joint 2
-    a1 = link2(x) = 0.35
-    d2 =0, since X1 and X2 are perpendicular.
+* a1 = link2(x) = 0.35
+* d2 =0, since X1 and X2 are perpendicular.
 Joint 3
     a2 = link3(z) = 1.25
     d3 =0, since X2 and X3 are coincident.

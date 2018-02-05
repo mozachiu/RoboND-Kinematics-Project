@@ -54,8 +54,11 @@ Joint 7 measures the angle between X6 and XG about the ZG.  θ7=0.
 ![alt text][image13]
 
 α(alpha) = arm twist angle
+
 a = arm link length
+
 d = arm link offset
+
 θ = arm joint angle
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.

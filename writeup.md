@@ -88,7 +88,7 @@ Joint 7 (Gripper Joint)
 * d7 = link(gripper x)-link5(x)= 2.1529–1.8499 = 0.303
 
 Modified DH parameters
-DH = {   alpha0: 0,      a0: 0,      d1: 0.75,    q1: q1,
+*DH = {   alpha0: 0,      a0: 0,      d1: 0.75,    q1: q1,
          alpha1: -pi/2,  a1: 0.35,   d2: 0,       q2: q2-pi/2,
          alpha2: 0,      a2: 1.25,   d3: 0,       q3: q3,
          alpha3: -pi/2,  a3: 0.0536, d4: 1.5014,  q4: q4,

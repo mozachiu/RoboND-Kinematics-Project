@@ -61,29 +61,32 @@ d = arm link offset
 θ = arm joint angle
 
 Joint 1
-* a0 = 0, since this is the base link.
+* a0 = 0 (base link)
 * d1 = link2(z) = 0.75
 
 Joint 2
 * a1 = link2(x) = 0.35
-* d2 =0, since X1 and X2 are perpendicular.
+* d2 =0  (X1 and X2 are perpendicular)
 
 Joint 3
 * a2 = link3(z) = 1.25
-* d3 =0, since X2 and X3 are coincident.
+* d3 =0 (X2 and X3 are coincident)
 
 Joint 4
-    a3 = link3(z) - link5(z) = 2–1.9464 = 0.0536
-    d4 = link5(x)- link3(x) = 1.8499–0.3485= 1.5014
+* a3 = link3(z) - link5(z) = 2–1.9464 = 0.0536
+* d4 = link5(x)- link3(x) = 1.8499–0.3485= 1.5014
+
 Joint 5
-    a4 = 0, since O4 and O5 are coincident.
-    d5 =0, since X4 and X5 are coincident.
+* a4 = 0 (O4 and O5 are coincident)
+* d5 = 0 (X4 and X5 are coincident)
+
 Joint 6
-    a5 = 0, since O5 and O6 are coincident.
-    d6 =0, since X5 and X6 are coincident.
+* a5 = 0 (O5 and O6 are coincident)
+* d6 =0 (X5 and X6 are coincident)
+
 Joint 7 (Gripper Joint)
-    a6 = 0, since Z6 is coincident with Z7.
-    d7 = link(gripper x)-link5(x)= 2.1529–1.8499 = 0.303
+* a6 = 0 (Z6 is coincident with Z7)
+* d7 = link(gripper x)-link5(x)= 2.1529–1.8499 = 0.303
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
 

@@ -133,6 +133,7 @@ After we get WC, we can calculates the angles from θ1 to θ6.
 ![alt text][image17]
 
 θ1 = atan2(y of wc, x of wc)
+
 r = sqrt(wx**2+wy**2) - 0.35 # a1: 0.35
 
 ![alt text][image18]
@@ -166,7 +167,7 @@ theta6 = atan2(-nR3_6[1,1], nR3_6[1,0])
 
 #### 1. Fill in the `IK_server.py` file with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis. Your code must guide the robot to successfully complete 8/10 pick and place cycles. Briefly discuss the code you implemented and your results. 
 
-1.In the `IK_server.py`, import the numpy to improve performance of calculate. 
+1.In the `IK_server.py`, implement the code with `numpy` to improve performance of calculate. 
 
 2.Import the scipy.linalg, use the function `linalg.lu_factor` to compute pivoted LU decomposition of R0_3 .Compute R3_6 use the function `linalg.lu_solve` with the result and R0_6 as the parameter.
 

@@ -140,11 +140,27 @@ r = sqrt(wx**2+wy**2) - 0.35 # a1: 0.35
 x = sqrt(0.96*0.96+0.054*0.054)=sqrt(0.9216+0.002916=0.924516)=0.962
 
 c=0.962
+
 b = A =1.5
+
 a = 0.54
+
 angle_x = acos((b * b + c * c -a * a) / (2 * b * c))
 
 theta3 = pi/2 - (b + angle_x)
+
+Using the individual DH transforms R0_6 = R0_1*R1_2*R2_3*R3_4*R4_5*R5_6 
+
+Using the individual DH transforms R0_6 = R0_1*R1_2*R2_3*R3_4*R4_5*R5_6 
+
+R3_6 = Invert of R0_3 * R0_6
+
+theta4 = atan2(nR3_6[2,2], -nR3_6[0,2])
+
+theta5 = atan2(math.sqrt(nR3_6[0,2] * nR3_6[0,2] + nR3_6[2,2]*nR3_6[2,2]),nR3_6[1,2])
+
+theta6 = atan2(-nR3_6[1,1], nR3_6[1,0])
+
 
 ### Project Implementation
 

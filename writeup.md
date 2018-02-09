@@ -151,7 +151,7 @@ theta3 = pi/2 - (b + angle_x)
 
 Using the individual DH transforms R0_6 = R0_1*R1_2*R2_3*R3_4*R4_5*R5_6 
 
-Using the individual DH transforms R0_6 = R0_1*R1_2*R2_3*R3_4*R4_5*R5_6 
+and R0_6 = Rrpy
 
 R3_6 = Invert of R0_3 * R0_6
 
@@ -166,11 +166,8 @@ theta6 = atan2(-nR3_6[1,1], nR3_6[1,0])
 
 #### 1. Fill in the `IK_server.py` file with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis. Your code must guide the robot to successfully complete 8/10 pick and place cycles. Briefly discuss the code you implemented and your results. 
 
+1.In the `IK_server.py`, import the numpy to improve performance of calculate. 
 
-Here I'll talk about the code, what techniques I used, what worked and why, where the implementation might fail and how I might improve it if I were going to pursue this project further.  
+2.Import the scipy.linalg, use the function `linalg.lu_factor` to compute pivoted LU decomposition of R0_3 .Compute R3_6 use the function `linalg.lu_solve` with the result and R0_6 as the parameter.
 
-
-And just for fun, another example image:
-![alt text][image3]
-
-
+3.The average of successfully complete pick and place cycles is about 9/10. It's not too bad.

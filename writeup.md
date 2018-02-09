@@ -8,6 +8,8 @@
 [image14]: ./misc_images/image14.jpg
 [image15]: ./misc_images/image15.jpg
 [image16]: ./misc_images/image16.jpg
+[image17]: ./misc_images/image17.jpg
+[image18]: ./misc_images/image18.jpg
 
 ### Kinematic Analysis
 #### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
@@ -127,8 +129,22 @@ and
 R_corr = a correctional rotation composed by a rotation on the Z axis of 180° (π) followed by a rotation on the Y axis of -90 (-π/2).
 
 After we get WC, we can calculates the angles from θ1 to θ6.
-θ1 = atan2(y of wc, x of wc)
 
+![alt text][image17]
+
+θ1 = atan2(y of wc, x of wc)
+r = sqrt(wx**2+wy**2) - 0.35 # a1: 0.35
+
+![alt text][image18]
+
+x = sqrt(0.96*0.96+0.054*0.054)=sqrt(0.9216+0.002916=0.924516)=0.962
+
+c=0.962
+b = A =1.5
+a = 0.54
+angle_x = acos((b * b + c * c -a * a) / (2 * b * c))
+
+theta3 = pi/2 - (b + angle_x)
 
 ### Project Implementation
 
